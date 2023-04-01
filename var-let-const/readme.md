@@ -1,0 +1,5 @@
+var: Variables declared with var are function-scoped or globally-scoped, meaning that they are accessible anywhere within the function or global scope in which they are defined. However, if var is declared within a block (e.g., inside an if statement or a for loop), it will still be accessible outside of that block, which is called "hoisting". var can be reassigned and redeclared within its scope.
+
+let: Variables declared with let are block-scoped, meaning that they are only accessible within the block in which they are defined. Unlike var, let cannot be redeclared within the same scope, but it can be reassigned.
+
+const: Variables declared with const are also block-scoped, but unlike let, they cannot be reassigned or redeclared within the same scope. However, if the variable is an object or an array, its properties or elements can still be modified.
