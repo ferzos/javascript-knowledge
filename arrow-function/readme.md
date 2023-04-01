@@ -99,3 +99,6 @@ const bar = (d, e, f) => {
 }
 bar(2, 'b');
 ```
+
+3. Cannot be used as generators
+The yield keyword cannot be used in an arrow function's body
