@@ -6,3 +6,4 @@ const spliced = array.splice(0, 2);
  * 2. and return the spliced value
  */
 console.log({ spliced, array })
+
