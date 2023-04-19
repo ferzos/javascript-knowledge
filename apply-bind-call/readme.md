@@ -4,7 +4,7 @@
 
 ## `call()`
 
-This method invokes the function immediately and allows you to pass arguments one by one. The first argument is the value of this in the function, and subsequent arguments are the arguments passed to the function.
+This method invokes the function immediately and allows you to pass arguments one by one. The first argument is the value of `this` in the function, and subsequent arguments are the arguments passed to the function.
 
 ```javascript
 function greet(lastname) {

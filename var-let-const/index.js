@@ -14,6 +14,6 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log(x); // 2 (because of hoisting)
-console.log(insideLoop) // 9 (can access var defined in a foor loop)
+console.log(insideLoop) // 9 (can access var defined in a for loop)
 console.log(y); // ReferenceError: y is not defined (out of scope)
 console.log(z); // ReferenceError: z is not defined (out of scope)

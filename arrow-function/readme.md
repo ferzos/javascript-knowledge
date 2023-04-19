@@ -2,7 +2,7 @@
 
 ## Difference with regular function expression
 
-1. Syntactically differ
+### 1. Syntactically differ
 
 - Regular function uses `function` whereas arrow function uses `let` or `const`
 
@@ -18,9 +18,9 @@ const add = (a,b) => a + b
 const makeObject = () => ({ id: 'id', value: 0 })
 ```
 
-2. No bindings
+### 2. No bindings
 
-Don't have their own bindings to `this`, `arguments`, or `super`. Arrow functions establish this based on the scope the arrow function is defined within
+Don't have their own bindings to `this`, `arguments`, or `super`. Arrow functions establish `this` based on the scope the arrow function is defined within
 
 ```javascript
 const obj = {
@@ -91,7 +91,7 @@ foo(1, 'a');
 const bar = (d, e, f) => {
   const [a, b, c] = arguments;
   /**
-   * 1. We expect a tobe d, b tobe e, and c tobe f
+   * 1. We expect a tobe d, b to be e, and c to be f
    * 2. But since arrow function doesn't have bindings to arguments
    * 3. arguments above reger to the global arguments
    */
@@ -100,5 +100,6 @@ const bar = (d, e, f) => {
 bar(2, 'b');
 ```
 
-3. Cannot be used as generators
+### 3. Cannot be used as generators
+
 The yield keyword cannot be used in an arrow function's body
